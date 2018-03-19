@@ -30,10 +30,10 @@ app.use(bodyParser.urlencoded({
   extended: true,
 }));
 app.use(session({
-    key: 'sessionid',
-    secret: 'Domo Arigato',
-    resave: true,
-    saveUnintialized: true,
+  key: 'sessionid',
+  secret: 'Domo Arigato',
+  resave: true,
+  saveUnintialized: true,
 }));
 app.engine('handlebars', expressHandlebars({ defaultLayout: 'main' }));
 app.set('view engine', 'handlebars');
